@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="net.starmu.smartcity.ui.mainFragments.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/allservice"
+        android:name="net.starmu.smartcity.ui.mainFragments.allService.AllService"
+        android:label="allservice"
+        tools:layout="allservice" />
+    <fragment
+        android:id="@+id/news"
+        android:name="net.starmu.smartcity.ui.mainFragments.news.News"
+        android:label="news"
+        tools:layout="news" />
+    <fragment
+        android:id="@+id/activitys"
+        android:name="net.starmu.smartcity.ui.mainFragments.activitys.Activitys"
+        android:label="activitys"
+        tools:layout="activitys" />
+    <fragment
+        android:id="@+id/person_center"
+        android:name="net.starmu.smartcity.ui.mainFragments.personCenter.PersonCenterFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_person_center" />
+</navigation>
